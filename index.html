@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
 
+    <script defer src="random-library.js"></script>
     <script defer src="main.js"></script>
   </head>
 
@@ -18,10 +19,11 @@
     <hr />
 
     <h3>Click to generate nickname!</h3>
+    <p>firstname: <input id="firstname" type="text"> lastname: <input id="lastname" type="text"></p>
     <p>
-      <button>single nickname</button><button>all nicknames</button>
+      <button id="single">single nickname</button><button id="all">all nicknames</button>
     </p>
-
     <hr />
+    <p id="nickOutput"></p>
   </body>
 </html>
