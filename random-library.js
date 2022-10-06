@@ -5,3 +5,7 @@ function randomDec(low, high){
 function randomInt(low, high){
     return Math.floor(randomDec(low, high));
 }
+
+function randomArray(array){
+    return array[randomInt(0, array.length)]
+}

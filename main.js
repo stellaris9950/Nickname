@@ -6,6 +6,8 @@ document.getElementById("all").addEventListener("click", allNickGenerate);
 
 
 //function calling
+
+//eventlistner and function starter of single nick generate
 function singleNickGenerate(){
   let firstName = document.getElementById("firstname").value;
   let lastName = document.getElementById("lastname").value;
@@ -15,6 +17,7 @@ function singleNickGenerate(){
   document.getElementById("nickOutput").innerHTML = oneNick
 }
 
+//eventlistner and function starter of all nick generate
 function allNickGenerate(){
   let firstName = document.getElementById("firstname").value;
   let lastName = document.getElementById("lastname").value;
@@ -26,21 +29,27 @@ function allNickGenerate(){
 
 
 
+//storage of nicknames array
+let nickNames = ["Crusher", "the Scientist", "Twinkle-toes", "The Coder", "Jester", "The Sloth", "Quick-Silver"]
 
-
+//function single Nickname
 function singleNick(firstName, lastName){
-  let nickNames = ["Crusher", "the Scientist", "Twinkle-toes", "The Coder", "Jester", "The Sloth", "Quick-Silver"]
-  let num = randomInt(1, nickNames.length);
-  let randomNick = nickNames[num]
+  let randomNick = randomArray(nickNames);
   let nick = `${firstName} " ${randomNick} " ${lastName}`
   alert(nick)
   return(nick);
 }
 
+
+//function all nickname
+
 function allNick(firstName, lastName){
-  let num = randomInt(1, 10);
-  let nickNum = num
-  let nick = `${firstName} " ${nickNum} " ${lastName}`
+  
+  for (let i = 0; i < nickNames.length; i++){
+    let allNickname = ""
+    allNickname +=  `${nickNames[i]}`
+  }
+  let nick = `${firstName} " ${allNickname} " ${lastName}`
   alert(nick)
   return(nick);
  
