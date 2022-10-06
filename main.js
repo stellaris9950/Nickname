@@ -24,24 +24,19 @@ function allNickGenerate(){
   document.getElementById("nickOutput").innerHTML = oneNick
 }
 
-
-
-//get Names
-
-
-
-
-
 function singleNick(firstName, lastName){
-  let num = randomInt(1, 10);
-  let 
-  let nick = `${firstName} + ${lastName}`
+  let nickNames = ["Crusher", "the Scientist", "Twinkle-toes", "The Coder", "Jester", "The Sloth", "Quick-Silver"]
+  let num = randomInt(1, nickNames.length);
+  let randomNick = nickNames[num]
+  let nick = `${firstName} " ${randomNick} " ${lastName}`
   alert(nick)
   return(nick);
 }
 
 function allNick(firstName, lastName){
-  let nick = `${firstName} + ${lastName}`
+  let num = randomInt(1, 10);
+  let nickNum = num
+  let nick = `${firstName} " ${nickNum} " ${lastName}`
   alert(nick)
   return(nick);
  
