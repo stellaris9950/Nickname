@@ -48,9 +48,8 @@ function allNick(firstName, lastName){
   for (let i = 0; i < nickNames.length; i++){
     let allNickname = ""
     allNickname +=  `${nickNames[i]}`
+    let nick = `${firstName} " ${allNickname} " ${lastName}`
+    
   }
-  let nick = `${firstName} " ${allNickname} " ${lastName}`
-  alert(nick)
   return(nick);
- 
 }
