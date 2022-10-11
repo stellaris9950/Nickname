@@ -36,7 +36,6 @@ let nickNames = ["Crusher", "the Scientist", "Twinkle-toes", "The Coder", "Jeste
 function singleNick(firstName, lastName){
   let randomNick = randomArray(nickNames);
   let nick = `${firstName} " ${randomNick} " ${lastName}`
-  alert(nick)
   return(nick);
 }
 
@@ -44,12 +43,10 @@ function singleNick(firstName, lastName){
 //function all nickname
 
 function allNick(firstName, lastName){
-  
+  //0let allNickname = ""
+  let allNickname = ""
   for (let i = 0; i < nickNames.length; i++){
-    let allNickname = ""
-    allNickname +=  `${nickNames[i]}`
-    let nick = `${firstName} " ${allNickname} " ${lastName}`
-    
+    allNickname +=  `<h4>${firstName} "${nickNames[i]}" ${lastName}</h4>`
   }
-  return(nick);
+  return allNickname;
 }
